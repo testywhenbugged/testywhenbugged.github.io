@@ -16,7 +16,7 @@ describe('Login Test', () =>
     loginPage.enterPassword(Cypress.env('password'));
     //ADDED GIT COMMENT
     loginPage.clickLogin();
-    //test
+    //MERGE CONFLIKT
     loginPage.elements.errorMessage().should('contain.text', 'Invalid email or password.')
   })
 
