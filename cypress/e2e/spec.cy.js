@@ -14,8 +14,6 @@ describe('Login Test', () =>
     const loginPage = new LoginPage();
     loginPage.enterUsername(Cypress.env('username'));
     loginPage.enterPassword(Cypress.env('password'));
-    //ADDED GIT COMMENT
-    //OKAY NOW I GET IT
     loginPage.clickLogin();
     loginPage.elements.errorMessage().should('contain.text', 'Invalid email or password.')
   })
